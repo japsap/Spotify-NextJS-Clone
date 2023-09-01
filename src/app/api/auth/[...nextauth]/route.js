@@ -6,7 +6,6 @@ import AppleProvider from "next-auth/providers/apple";
 import { db } from "@lib/db";
 import { User } from "@schemas/User";
 
-import { redirect } from 'next/navigation';
 
 const handler = NextAuth({
   providers: [

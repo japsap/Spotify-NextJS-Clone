@@ -12,7 +12,12 @@ import { redirect } from "next/navigation";
 import { useState } from "react";
 
 const page = () => {
-  const { data: session } = useSession();
+  const { data: session } = useSession({
+    required: true,
+    onUnauthenticated() {
+      redirect('/')
+    }
+  });
 
   const [toggleImage, setToggleImage] = useState(false);
   const [toggleLeftSide, setToggleLeftSide] = useState(true);

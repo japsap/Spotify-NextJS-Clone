@@ -31,9 +31,10 @@ const page = () => {
     setUpProviders();
   }, []);
 
-    if (session) {
-      redirect("/account");
-    }
+  if(session){
+    redirect('/account')
+  }
+
 
   return (
     <div className="column bg-black md:bg-gradient-to-b md:from-[#1A1A1A] md:to-[#030303]">
@@ -49,7 +50,7 @@ const page = () => {
                 Object.values(providers).map((provider) => {
                   return (
                     <button
-                      onClick={() => signIn(provider.id)}
+                      onClick={() => signIn(provider.id, { callbackUrl: `${window.location.origin}/account` }).then(res => console.log(res))}
                       key={provider.id}
                       className="flex-center gap-3 text-white border font-semibold border-gray-400 w-full px-14 py-2 rounded-full"
                     >

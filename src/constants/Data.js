@@ -93,7 +93,7 @@ export const firstSetCards = {
     {
       img: 'Liked Songs',
       name: '',
-      style: 'flex-center px-[30.5px] rounded-l-md bg-gradient-to-br from-[#400CF1] to-white text-white p-[7px] text-sm',
+      style: 'flex-center px-[25.5px] rounded-l-md bg-gradient-to-br from-[#400CF1] to-white text-white p-[7px] text-sm',
       heart: true
     },
     {
@@ -130,32 +130,38 @@ export const secondSetCards = {
     {
       img: 'Trap19 Connection',
       name: 'https://cdns-images.dzcdn.net/images/cover/6c5a745d651750de643f5c9c912c5b98/264x264.jpg',
-      p:"Garjoka, FYRE, GJAANY"
+      p:"Garjoka, FYRE, GJAANY",
+      album: false
     },
     {
       img: '2000s Mix',
       name: 'https://i.scdn.co/image/6f0da41419b31d9d2ba55d2df212f59ad0668118',
-      p:"50 cent, Chris Brown, The Crumpster and more"
+      p:"50 cent, Chris Brown, The Crumpster and more",
+      album: true
     },
     {
       img: '2010s Mix',
       name: 'https://media.gq.com/photos/6255cb4ce2859f694bf0b1db/master/w_1600%2Cc_limit/GQ0522_Future_03.jpg',
-      p:"Future, BlocBoy JB, Lil Baby and more"
+      p:"Future, BlocBoy JB, Lil Baby and more",
+      album: false
     },
     {
       img: 'Chill Mix',
       name: 'https://upload.wikimedia.org/wikipedia/en/a/af/Pop_Smoke_in_2020_%281%29_%282%29_%281%29.jpg',
-      p:"Pop Smoke, J. Cole, Lil Tecca and more"
+      p:"Pop Smoke, J. Cole, Lil Tecca and more",
+      album: false
     },
     {
       img: 'Moody Mix',
       name: 'https://media.pitchfork.com/photos/64adbcfa6945bf05902b493b/master/pass/YNW-Melly-vs-Melvin.jpg',
-      p:"YNM Melly, Lil Baby, emm1tt and more"
+      p:"YNM Melly, Lil Baby, emm1tt and more",
+      album: false
     },
     {
       img: 'Hip Hop Mix',
       name: 'https://pbs.twimg.com/media/EQsSmlQW4AImR4o?format=jpg&name=900x900',
-      p:"Joyner Lucas, 50 cent, 21 Savage and more"
+      p:"Joyner Lucas, 50 cent, 21 Savage and more",
+      album: false
     },
   ]
 }

@@ -64,7 +64,7 @@ export const PlayPauseButton = ({ items }) => {
   const [pause, setPause] = useState(false);
 
   const cl =
-    "absolute right-0 top-5 bg-[var(--green)] p-2 text-5xl rounded-full mr-5";
+    "absolute right-0 top-4 bg-[var(--green)] p-2 text-5xl rounded-full mr-5";
 
   return (
     <button className={`${items} transition ease-in-out delay-150`}>
@@ -85,8 +85,8 @@ export const PlayPauseButton = ({ items }) => {
 
 export const RowCards = ({ card }) => {
   return (
-    <div className="relative glassCard rounded-r-md flex-between group">
-      <div className="w-full h-[85px] flex rounded-md cursor-pointer">
+    <div className="relative glassCard rounded-md flex-between group">
+      <div className="w-full h-[75px] flex rounded-md cursor-pointer">
         <img className="rounded-l-md" src={card.name} />
         {card.heart && (
           <span className={card.style}>
@@ -106,7 +106,7 @@ export const ColCards = ({ card }) => {
   return (
     <div className="relative glassCard rounded-md group p-3">
       <div className="w-full column rounded-md cursor-pointer">
-        <img className="rounded-l-md h-40 object-cover" src={card.name} />
+        <img className={` ${card.album ? "rounded-full" : 'rounded-l-md'} h-40 object-cover`} src={card.name} />
         <div className="column gap-3 pt-3">
           <h1 className="text-white text-md font-bold">{card.img}</h1>
           <p className="text-gray-400 leading-4">{card.p}</p>
